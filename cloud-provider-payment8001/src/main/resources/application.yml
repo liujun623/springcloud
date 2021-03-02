@@ -12,3 +12,16 @@ spring:
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   type-aliases-package: com.atguigu.springcloud.entities    # 所有Entity别名类所在包
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      #集群版
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+  instance:
+    instance-id: payment8001
+    prefer-ip-address: true
+
+#      单机版
+#      defaultZone: http://localhost:7001/eureka

@@ -11,6 +11,11 @@
 
     <artifactId>cloud-provider-payment8001</artifactId>
     <dependencies>
+<!--        引入netflix-eureka-client-->
+                <dependency>
+                    <groupId>org.springframework.cloud</groupId>
+                    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+                </dependency>
         <dependency><!-- 引入自己定义的api通用包，可以使用Payment支付Entity -->
             <groupId>org.example</groupId>
             <artifactId>cloud-api-commons</artifactId>
@@ -66,10 +71,7 @@
 <!--            <artifactId>spring-cloud-starter-zipkin</artifactId>-->
 <!--        </dependency>-->
 <!--        &lt;!&ndash;eureka-client&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
-<!--        </dependency>-->
+
 <!--        <dependency>&lt;!&ndash; 引入自己定义的api通用包，可以使用Payment支付Entity &ndash;&gt;-->
 <!--            <groupId>com.atguigu.springcloud</groupId>-->
 <!--            <artifactId>cloud-api-commons</artifactId>-->

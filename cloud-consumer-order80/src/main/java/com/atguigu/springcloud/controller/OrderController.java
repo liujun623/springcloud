@@ -13,7 +13,10 @@ import javax.annotation.Resource;
 @RestController
 @Slf4j
 public class OrderController {
-    public static final String PAYMENT_KEY="http://localhost:8001";
+//    public static final String PAYMENT_KEY="http://localhost:8001";
+    public static final String PAYMENT_KEY="http://CLOUDE-PAYMENT-SERVICE";
+
+
     @Resource
     private RestTemplate restTemplate;
     @GetMapping("/consumer/payment/create")
